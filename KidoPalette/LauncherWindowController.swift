@@ -11,6 +11,9 @@ enum LauncherOverlayPolicy {
     /// フルスクリーン退避／復帰のフレーム補間時間。
     static let transitionDuration: TimeInterval = 0.28
 
+    /// Settings ウィンドウの `NSWindow.identifier`（中央寄せ対象）。
+    static let settingsWindowIdentifier = "settings"
+
     /// フルスクリーンオーバーレイ中にランチャー以外がキーになったら、設定等の背面隠れを避けるため退避する。
     static func shouldSuspendOverlay(
         isVisible: Bool,
@@ -29,6 +32,18 @@ enum LauncherOverlayPolicy {
         keyWindowIsLauncher: Bool
     ) -> Bool {
         isVisible && showsFullscreen && isSuspended && keyWindowIsLauncher
+    }
+
+    /// ランチャー表示中に Settings だけをグリッドのあるスクリーン中央へ寄せる。
+    /// Help / About / Open パネルなどはシステムの既定位置のままにする。
+    static func shouldCenterAuxiliaryWindow(
+        isLauncherVisible: Bool,
+        keyWindowIsLauncher: Bool,
+        windowIdentifier: String?
+    ) -> Bool {
+        isLauncherVisible
+            && !keyWindowIsLauncher
+            && windowIdentifier == settingsWindowIdentifier
     }
 
     /// 保存済みサイズを、いまグリッドがいるスクリーン中央へ置く（マルチディスプレイ対策）。
@@ -173,9 +188,13 @@ final class LauncherController {
         guard let window else { return }
         let keyWindowIsLauncher = isLauncherWindow(window)
 
-        // 設定・About・Help などは、グリッドがあるスクリーン中央へ寄せる。
-        if !keyWindowIsLauncher, isVisible, let screen = launcherScreen() {
-            center(window, on: screen)
+        // Settings だけ、グリッドがあるスクリーン中央へ寄せる。
+        centerAuxiliaryWindowIfNeeded(window, keyWindowIsLauncher: keyWindowIsLauncher)
+        // WindowAccessor が identifier を後から付ける場合に備え、次ターンでも再判定する。
+        if !keyWindowIsLauncher, isVisible, window.identifier == nil {
+            Task { @MainActor [weak self] in
+                self?.centerAuxiliaryWindowIfNeeded(window, keyWindowIsLauncher: false)
+            }
         }
 
         if LauncherOverlayPolicy.shouldSuspendOverlay(
@@ -302,6 +321,15 @@ final class LauncherController {
             }
         }
         return launcherWindows().first?.screen ?? NSScreen.main
+    }
+
+    private func centerAuxiliaryWindowIfNeeded(_ window: NSWindow, keyWindowIsLauncher: Bool) {
+        guard LauncherOverlayPolicy.shouldCenterAuxiliaryWindow(
+            isLauncherVisible: isVisible,
+            keyWindowIsLauncher: keyWindowIsLauncher,
+            windowIdentifier: window.identifier?.rawValue
+        ), let screen = launcherScreen() else { return }
+        center(window, on: screen)
     }
 
     private func center(_ window: NSWindow, on screen: NSScreen) {
