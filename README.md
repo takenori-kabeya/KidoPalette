@@ -1,16 +1,16 @@
 # KidoPalette
 
-**KidoPalette** is a macOS app launcher. After LaunchPad was removed in macOS 26 Tahoe, it offers a simple, registration-based palette: pick your apps, group them in tabs, and open the launcher from a hot corner.
+**KidoPalette** is a macOS app launcher. When LaunchPad was removed in macOS 26 Tahoe, it was a real inconvenience. Alternatives exist, but they also raise the question of whether LaunchPad itself was the right model—so this project aims at a simple launcher instead.
 
 Screenshots can be added later under `assets/`.
 
 ## Features
 
-- Show or hide the launcher from a configurable hot corner (no Accessibility permission)
-- Optional full-screen launcher presentation (borderless, above the menu bar and Dock)
+- Browse registered app icons and launch an app by clicking its icon
+- Show or hide the launcher from a hot corner
 - Tabs for grouping apps; move apps between tabs; register the same app in multiple tabs
-- Manual registration via Open Panel or drag-and-drop from Finder
-- Drag to reorder apps and tabs
+- Switch between full-screen launcher presentation (LaunchPad-like) and a regular window
+- Register apps via the file-selection dialog or drag-and-drop from Finder
 - Optional Dock icon (Settings)
 - UI languages: English and Japanese
 
@@ -86,15 +86,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
-**KidoPalette** は、macOS 向けのアプリランチャーです。macOS 26 Tahoe で LaunchPad が廃止されたあとに、登録制のシンプルなパレットとして使えることを目指しています。
+**KidoPalette** は、macOS向けのアプリランチャーです。macOS 26 TahoeでLaunchPadが廃止され、かなり困りました。代替品も探しましたが、そもそもLaunchPadが良かったのか、という点も踏まえ、シンプルなランチャーを作ることにしました。
 
 ## できること
 
-- ホットコーナーからの表示／非表示（アクセシビリティ権限は不要）
-- フルスクリーン表示（ボーダーレス、メニューバー／Dock より手前）
+- アプリアイコンを一覧で表示し、アイコンクリックでアプリを起動
+- ホットコーナーからのランチャー画面表示／非表示
 - タブでのグループ分け、タブ間移動、同一アプリの複数タブ登録
-- Open Panel または Finder からのドラッグ＆ドロップで登録
-- アプリアイコン／タブのドラッグ並べ替え
+- ランチャー画面のフルスクリーン表示（LaunchPad風）／ウィンドウ表示の切り替え
+- ファイル選択ダイアログからアプリ登録／Finderからドラッグ＆ドロップでアプリ登録
 - Dock アイコンの表示切替（設定）
 - UI 言語: 英語／日本語
 
