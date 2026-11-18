@@ -54,6 +54,9 @@ struct KidoPaletteApp: App {
 
         Window("About KidoPalette", id: "about") {
             AboutView()
+                .background(WindowAccessor { window in
+                    window.identifier = NSUserInterfaceItemIdentifier("about")
+                })
         }
         .windowResizability(.contentMinSize)
         .defaultSize(
@@ -63,6 +66,9 @@ struct KidoPaletteApp: App {
 
         Window("KidoPalette Help", id: "help") {
             HelpView()
+                .background(WindowAccessor { window in
+                    window.identifier = NSUserInterfaceItemIdentifier("help")
+                })
         }
         .windowResizability(.contentMinSize)
         .defaultSize(
@@ -72,6 +78,11 @@ struct KidoPaletteApp: App {
 
         Settings {
             SettingsView(store: store)
+                .background(WindowAccessor { window in
+                    window.identifier = NSUserInterfaceItemIdentifier(
+                        LauncherOverlayPolicy.settingsWindowIdentifier
+                    )
+                })
         }
     }
 

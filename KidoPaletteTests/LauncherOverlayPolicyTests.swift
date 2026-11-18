@@ -105,4 +105,55 @@ struct LauncherOverlayPolicyTests {
         #expect(result.minY >= covering.minY)
         #expect(result.maxY <= covering.maxY)
     }
+
+    @Test func centersOnlySettingsWindowWhileLauncherIsVisible() {
+        #expect(
+            LauncherOverlayPolicy.shouldCenterAuxiliaryWindow(
+                isLauncherVisible: true,
+                keyWindowIsLauncher: false,
+                windowIdentifier: LauncherOverlayPolicy.settingsWindowIdentifier
+            )
+        )
+    }
+
+    @Test func doesNotCenterHelpAboutOrUnidentifiedWindows() {
+        #expect(
+            !LauncherOverlayPolicy.shouldCenterAuxiliaryWindow(
+                isLauncherVisible: true,
+                keyWindowIsLauncher: false,
+                windowIdentifier: "help"
+            )
+        )
+        #expect(
+            !LauncherOverlayPolicy.shouldCenterAuxiliaryWindow(
+                isLauncherVisible: true,
+                keyWindowIsLauncher: false,
+                windowIdentifier: "about"
+            )
+        )
+        #expect(
+            !LauncherOverlayPolicy.shouldCenterAuxiliaryWindow(
+                isLauncherVisible: true,
+                keyWindowIsLauncher: false,
+                windowIdentifier: nil
+            )
+        )
+    }
+
+    @Test func doesNotCenterWhenLauncherHiddenOrKeyIsLauncher() {
+        #expect(
+            !LauncherOverlayPolicy.shouldCenterAuxiliaryWindow(
+                isLauncherVisible: false,
+                keyWindowIsLauncher: false,
+                windowIdentifier: LauncherOverlayPolicy.settingsWindowIdentifier
+            )
+        )
+        #expect(
+            !LauncherOverlayPolicy.shouldCenterAuxiliaryWindow(
+                isLauncherVisible: true,
+                keyWindowIsLauncher: true,
+                windowIdentifier: LauncherOverlayPolicy.settingsWindowIdentifier
+            )
+        )
+    }
 }
