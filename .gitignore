@@ -146,3 +146,14 @@ Configs/Local.xcconfig
 
 *~
 
+# Cursor
+
+.cursorrules
+.cursor/
+
+# Others
+
+DerivedData/
+*.xcuserstate
+.env*
+*.pem

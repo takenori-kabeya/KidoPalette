@@ -1,0 +1,3 @@
+// Shared build settings for all configurations.
+// Put your Apple Developer Team ID in Local.xcconfig (gitignored).
+#include? "Local.xcconfig"

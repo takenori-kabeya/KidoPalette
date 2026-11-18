@@ -1,0 +1,4 @@
+// Copy to Local.xcconfig and set your Apple Developer Team ID.
+//   cp Configs/Local.xcconfig.example Configs/Local.xcconfig
+// Do not commit Local.xcconfig.
+DEVELOPMENT_TEAM = YOUR_TEAM_ID

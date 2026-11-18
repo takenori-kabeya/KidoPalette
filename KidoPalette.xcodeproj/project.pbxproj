@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8D014EED304D22CF00A19037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D014ED7304D22CD00A19037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D014EDE304D22CD00A19037;
+			remoteInfo = KidoPalette;
+		};
+		8D014EF7304D22CF00A19037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D014ED7304D22CD00A19037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D014EDE304D22CD00A19037;
+			remoteInfo = KidoPalette;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D014EDF304D22CD00A19037 /* KidoPalette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidoPalette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D014EEC304D22CF00A19037 /* KidoPaletteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidoPaletteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D014EF6304D22CF00A19037 /* KidoPaletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KidoPaletteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C0F100304D22CF00A19037 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8D014F20304D22CF00A19037 /* Exceptions for "KidoPalette" folder in "KidoPalette" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8D014EDE304D22CD00A19037 /* KidoPalette */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8D014EE1304D22CD00A19037 /* KidoPalette */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8D014F20304D22CF00A19037 /* Exceptions for "KidoPalette" folder in "KidoPalette" target */,
+			);
+			path = KidoPalette;
+			sourceTree = "<group>";
+		};
+		8D014EEF304D22CF00A19037 /* KidoPaletteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KidoPaletteTests;
+			sourceTree = "<group>";
+		};
+		8D014EF9304D22CF00A19037 /* KidoPaletteUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KidoPaletteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D014EDC304D22CD00A19037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D014EE9304D22CF00A19037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D014EF3304D22CF00A19037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D014ED6304D22CD00A19037 = {
+			isa = PBXGroup;
+			children = (
+				A1C0F101304D22CF00A19037 /* Configs */,
+				8D014EE1304D22CD00A19037 /* KidoPalette */,
+				8D014EEF304D22CF00A19037 /* KidoPaletteTests */,
+				8D014EF9304D22CF00A19037 /* KidoPaletteUITests */,
+				8D014EE0304D22CD00A19037 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D014EE0304D22CD00A19037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D014EDF304D22CD00A19037 /* KidoPalette.app */,
+				8D014EEC304D22CF00A19037 /* KidoPaletteTests.xctest */,
+				8D014EF6304D22CF00A19037 /* KidoPaletteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C0F101304D22CF00A19037 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				A1C0F100304D22CF00A19037 /* Shared.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D014EDE304D22CD00A19037 /* KidoPalette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D014F00304D22CF00A19037 /* Build configuration list for PBXNativeTarget "KidoPalette" */;
+			buildPhases = (
+				8D014EDB304D22CD00A19037 /* Sources */,
+				8D014EDC304D22CD00A19037 /* Frameworks */,
+				8D014EDD304D22CD00A19037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8D014EE1304D22CD00A19037 /* KidoPalette */,
+			);
+			name = KidoPalette;
+			packageProductDependencies = (
+			);
+			productName = KidoPalette;
+			productReference = 8D014EDF304D22CD00A19037 /* KidoPalette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D014EEB304D22CF00A19037 /* KidoPaletteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D014F03304D22CF00A19037 /* Build configuration list for PBXNativeTarget "KidoPaletteTests" */;
+			buildPhases = (
+				8D014EE8304D22CF00A19037 /* Sources */,
+				8D014EE9304D22CF00A19037 /* Frameworks */,
+				8D014EEA304D22CF00A19037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D014EEE304D22CF00A19037 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8D014EEF304D22CF00A19037 /* KidoPaletteTests */,
+			);
+			name = KidoPaletteTests;
+			packageProductDependencies = (
+			);
+			productName = KidoPaletteTests;
+			productReference = 8D014EEC304D22CF00A19037 /* KidoPaletteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D014EF5304D22CF00A19037 /* KidoPaletteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D014F06304D22CF00A19037 /* Build configuration list for PBXNativeTarget "KidoPaletteUITests" */;
+			buildPhases = (
+				8D014EF2304D22CF00A19037 /* Sources */,
+				8D014EF3304D22CF00A19037 /* Frameworks */,
+				8D014EF4304D22CF00A19037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D014EF8304D22CF00A19037 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8D014EF9304D22CF00A19037 /* KidoPaletteUITests */,
+			);
+			name = KidoPaletteUITests;
+			packageProductDependencies = (
+			);
+			productName = KidoPaletteUITests;
+			productReference = 8D014EF6304D22CF00A19037 /* KidoPaletteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D014ED7304D22CD00A19037 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					8D014EDE304D22CD00A19037 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					8D014EEB304D22CF00A19037 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 8D014EDE304D22CD00A19037;
+					};
+					8D014EF5304D22CF00A19037 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 8D014EDE304D22CD00A19037;
+					};
+				};
+			};
+			buildConfigurationList = 8D014EDA304D22CD00A19037 /* Build configuration list for PBXProject "KidoPalette" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 8D014ED6304D22CD00A19037;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8D014EE0304D22CD00A19037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D014EDE304D22CD00A19037 /* KidoPalette */,
+				8D014EEB304D22CF00A19037 /* KidoPaletteTests */,
+				8D014EF5304D22CF00A19037 /* KidoPaletteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D014EDD304D22CD00A19037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D014EEA304D22CF00A19037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D014EF4304D22CF00A19037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D014EDB304D22CD00A19037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D014EE8304D22CF00A19037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D014EF2304D22CF00A19037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D014EEE304D22CF00A19037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D014EDE304D22CD00A19037 /* KidoPalette */;
+			targetProxy = 8D014EED304D22CF00A19037 /* PBXContainerItemProxy */;
+		};
+		8D014EF8304D22CF00A19037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D014EDE304D22CD00A19037 /* KidoPalette */;
+			targetProxy = 8D014EF7304D22CF00A19037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8D014EFE304D22CF00A19037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D014EFF304D22CF00A19037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8D014F01304D22CF00A19037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KidoPalette/KidoPalette.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KidoPalette/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Takenori Kabeya and KidoPalette contributors. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cabinetwork.KidoPalette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8D014F02304D22CF00A19037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KidoPalette/KidoPalette.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KidoPalette/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Takenori Kabeya and KidoPalette contributors. All rights reserved.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cabinetwork.KidoPalette;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8D014F04304D22CF00A19037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cabinetwork.KidoPaletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidoPalette.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KidoPalette";
+			};
+			name = Debug;
+		};
+		8D014F05304D22CF00A19037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cabinetwork.KidoPaletteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KidoPalette.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KidoPalette";
+			};
+			name = Release;
+		};
+		8D014F07304D22CF00A19037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cabinetwork.KidoPaletteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KidoPalette;
+			};
+			name = Debug;
+		};
+		8D014F08304D22CF00A19037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0F100304D22CF00A19037 /* Shared.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.cabinetwork.KidoPaletteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KidoPalette;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D014EDA304D22CD00A19037 /* Build configuration list for PBXProject "KidoPalette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D014EFE304D22CF00A19037 /* Debug */,
+				8D014EFF304D22CF00A19037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D014F00304D22CF00A19037 /* Build configuration list for PBXNativeTarget "KidoPalette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D014F01304D22CF00A19037 /* Debug */,
+				8D014F02304D22CF00A19037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D014F03304D22CF00A19037 /* Build configuration list for PBXNativeTarget "KidoPaletteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D014F04304D22CF00A19037 /* Debug */,
+				8D014F05304D22CF00A19037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D014F06304D22CF00A19037 /* Build configuration list for PBXNativeTarget "KidoPaletteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D014F07304D22CF00A19037 /* Debug */,
+				8D014F08304D22CF00A19037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D014ED7304D22CD00A19037 /* Project object */;
+}
